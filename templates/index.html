@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pavan Agrawal | AI & ML Developer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">PA<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hey there, I'm</p>
+        <h1 class="hero-name">Pavan <span class="accent">Agrawal</span></h1>
+        <div class="hero-typewriter">
+          <span class="typed" id="typed-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-summary">
+          CS student specializing in AI &amp; Machine Learning. I build smart systems, 
+          predictive models, and full-stack web apps — passionate about solving real-world problems.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:pavanagrawal698@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/pavan-agrawal-00a405330" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Pavan-agrawal985" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="hero-img-ring"></div>
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Pavan Agrawal" class="hero-img"/>
+        <div class="hero-badge"><i class="fas fa-brain"></i> AI/ML</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a B.Tech student at <strong>Faculty of Technology, University of Delhi</strong> (CGPA: 8.91), 
+          building at the intersection of AI, backend development, and data science.</p>
+          <p>I thrive in team environments — whether that's collaborating on a gamified learning platform, 
+          predicting urban heatwaves with ML, or volunteering at developer conferences like NVIDIA Meet-up and CityJS.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">8.91</span><span class="stat-label">CGPA</span></div>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Events Volunteered</span></div>
+          </div>
+        </div>
+        <div class="about-edu">
+          <h3>Education</h3>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div>
+              <strong>Faculty of Technology, University of Delhi</strong>
+              <span>B.Tech | CGPA: 8.91 | 2024</span>
+              <small>Data Structures, OS, DBMS</small>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div>
+              <strong>Shri Gayatri Shiksha Niketan Sr. Sec. School</strong>
+              <span>12th Science (PCM) | 96.40% | 2023</span>
+              <small>Bharatpur, Rajasthan</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h4>Languages</h4>
+          <div class="tags">
+            <span>Python</span><span>Java</span><span>C</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h4>AI / ML</h4>
+          <div class="tags">
+            <span>NumPy</span><span>Pandas</span><span>Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-globe"></i></div>
+          <h4>Web Dev</h4>
+          <div class="tags">
+            <span>Flask</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>Databases</h4>
+          <div class="tags">
+            <span>MySQL</span><span>Oracle</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <h4>Tools & VCS</h4>
+          <div class="tags">
+            <span>Git</span><span>GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h4>AI Tools</h4>
+          <div class="tags">
+            <span>ChatGPT</span><span>Gemini</span><span>Kiro</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Proficiency bars -->
+      <div class="skill-bars">
+        <h3 class="bars-title">Proficiency</h3>
+        <div class="bar-item"><div class="bar-label"><span>Python</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Flask / Web Dev</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Machine Learning</span><span>75%</span></div><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>Java</span><span>70%</span></div><div class="bar-track"><div class="bar-fill" data-width="70"></div></div></div>
+        <div class="bar-item"><div class="bar-label"><span>MySQL / Databases</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-width="65"></div></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pavan-agrawal985/Learnico_pro" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Learnico</h3>
+          <p class="project-sub">Gamified Learning Platform</p>
+          <p>Quizzes, rewards, and progress tracking. Built with Flask backend and responsive HTML/CSS/JS frontend.</p>
+          <div class="tags">
+            <span>Flask</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-temperature-high"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pavan-agrawal985/Fetch-Build-FnB---Urban-Heatwave-Intensity-Predictor" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Urban Heatwave Predictor</h3>
+          <p class="project-sub">Machine Learning Model</p>
+          <p>ML model to predict urban heatwave intensity with data preprocessing, feature engineering, and Scikit-learn pipelines.</p>
+          <div class="tags">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pavan-agrawal985/Smart-Leave-Management-System" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>LeaveOK</h3>
+          <p class="project-sub">Smart Leave Management System</p>
+          <p>Role-based system with Student, Faculty, and Admin dashboards. Multi-level approval workflow with status tracking.</p>
+          <div class="tags">
+            <span>Flask</span><span>MySQL</span><span>Python</span><span>JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience <span class="accent"></span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2026</span>
+            <h3>CityJS Conference</h3>
+            <p class="timeline-role">Volunteer</p>
+            <p>Contributed to a JavaScript developer conference — managed registrations, attendee guidance, and technical session execution.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3>NVIDIA Developer Community Meet-up</h3>
+            <p class="timeline-role">Volunteer</p>
+            <p>Organized a developer meet-up around AI, GPU computing, and emerging tech. Managed logistics and supported technical sessions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+      <div class="cert-grid">
+        <div class="cert-card" data-src="{{ url_for('static', filename='images/cert1.jpg') }}" data-title="BITS of Invictus">
+          <div class="cert-img-wrap">
+            <img src="{{ url_for('static', filename='images/cert1.jpg') }}" alt="BITS of Invictus Certificate"/>
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="cert-info">
+            <i class="fas fa-certificate"></i>
+            <span>BITS of Invictus</span>
+          </div>
+        </div>
+        <div class="cert-card" data-src="{{ url_for('static', filename='images/cert2.png') }}" data-title="AI Tools Workshop">
+          <div class="cert-img-wrap">
+            <img src="{{ url_for('static', filename='images/cert2.png') }}" alt="AI Tools Workshop Certificate"/>
+            <div class="cert-overlay"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="cert-info">
+            <i class="fas fa-certificate"></i>
+            <span>AI Tools Workshop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt=""/>
+      <p id="lightbox-title"></p>
+    </div>
+  </div>
+
+  <!-- CURRENTLY LEARNING -->
+  <section class="section section-alt" id="learning">
+    <div class="container">
+      <h2 class="section-title">Currently <span class="accent">Learning</span></h2>
+      <div class="learning-grid">
+        <div class="learning-card">
+          <div class="learning-icon"><i class="fas fa-network-wired"></i></div>
+          <div>
+            <h4>Deep Learning</h4>
+            <p>Exploring neural networks, CNNs, and PyTorch fundamentals.</p>
+          </div>
+          <span class="learning-badge">In Progress</span>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon"><i class="fas fa-cloud"></i></div>
+          <div>
+            <h4>Cloud & Deployment</h4>
+            <p>Learning to deploy ML models and Flask apps on cloud platforms.</p>
+          </div>
+          <span class="learning-badge">In Progress</span>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <h4>Data Visualization</h4>
+            <p>Building interactive dashboards with Matplotlib and Plotly.</p>
+          </div>
+          <span class="learning-badge">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+      <p class="contact-sub">Open to internships, collaborations, and interesting projects.</p>
+      <div class="contact-grid">
+        <a href="mailto:pavanagrawal698@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>pavanagrawal698@gmail.com</span>
+        </a>
+        <a href="tel:+917877442936" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <span>+91-7877442936</span>
+        </a>
+        <a href="https://linkedin.com/in/pavan-agrawal-00a405330" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <span>linkedin.com/in/pavan-agrawal-00a405330</span>
+        </a>
+        <a href="#" class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Delhi, India</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built with <i class="fas fa-heart" style="color:#7c3aed"></i> by Pavan Agrawal &nbsp;|&nbsp; Flask + HTML/CSS/JS</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
