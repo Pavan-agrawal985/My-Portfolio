@@ -3,7 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pavan Agrawal | AI & ML Developer</title>
+
+  <!-- Primary SEO -->
+  <title>Pavan Agrawal | AI & ML Developer | Flask | Python</title>
+  <meta name="description" content="Pavan Agrawal — CS student at University of Delhi specializing in AI, Machine Learning, and Flask web development. View projects, skills, and contact info."/>
+  <meta name="keywords" content="Pavan Agrawal, AI developer, machine learning, Flask developer, Python developer, Delhi, portfolio, computer science"/>
+  <meta name="author" content="Pavan Agrawal"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://pavan-portfolio.onrender.com/"/>
+
+  <!-- Open Graph (LinkedIn, Facebook, WhatsApp previews) -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Pavan Agrawal | AI & ML Developer"/>
+  <meta property="og:description" content="CS student specializing in AI & ML. Building smart systems, predictive models, and full-stack Flask apps."/>
+  <meta property="og:image" content="{{ url_for('static', filename='images/profile.jpg', _external=True) }}"/>
+  <meta property="og:url" content="https://pavan-portfolio.onrender.com/"/>
+  <meta property="og:site_name" content="Pavan Agrawal Portfolio"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Pavan Agrawal | AI & ML Developer"/>
+  <meta name="twitter:description" content="CS student specializing in AI & ML. Building smart systems, predictive models, and full-stack Flask apps."/>
+  <meta name="twitter:image" content="{{ url_for('static', filename='images/profile.jpg', _external=True) }}"/>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pavan Agrawal",
+    "url": "https://pavan-portfolio.onrender.com",
+    "image": "https://pavan-portfolio.onrender.com/static/images/profile.jpg",
+    "jobTitle": "AI & ML Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Faculty of Technology, University of Delhi"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delhi",
+      "addressCountry": "IN"
+    },
+    "email": "pavanagrawal698@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/pavan-agrawal-00a405330",
+      "https://github.com/Pavan-agrawal985"
+    ],
+    "knowsAbout": ["Python", "Machine Learning", "Flask", "AI", "Java", "MySQL"]
+  }
+  </script>
+
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
