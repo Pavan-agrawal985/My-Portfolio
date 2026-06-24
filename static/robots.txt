@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pavan-portfolio.onrender.com/sitemap.xml
+Sitemap: https://pavan-portfolio-2urx.onrender.com/sitemap.xml
